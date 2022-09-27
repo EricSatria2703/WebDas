@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <h1>Movie</h1>
+    </head>
+
+    <body>
+        <video width="852" height="420" controls id="myVideo">
+        <source src="vid/videoplayback.mp4" type="video/mp4">
+            file not supported
+        <track src="vid/subtitle.vtt" kind="captions" srclang="en" label="English" >
+        <track src="vid/subtitle1.vtt" kind="captions" srclang="fr" label="French" >
+        </video>
+        <p>
+            <button type="button" onclick="playVid()"> Play </button>
+            <button type="button" onclick="pauseVid()"> Pause </button>
+            <button type="button" onclick="duration()"> Duration </button>
+            <button type="button" onclick="loopon()"> Loop On </button>
+            <button type="button" onclick="loopoff()"> Loop Off</button>
+            <button type="button" onclick="controlson()"> Control On </button>
+            <button type="button" onclick="controlsoff()"> Control Off</button>
+            <input type="range" min="0" max="100" step="1" oninput="volumesetting(this.value)" onchange="volumesetting(this.value)"> Volume
+            <div id="vol"></div>
+        </p>
+
+
+        <h2>YouTube</h2>
+        <iframe width="852" height="420" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+    </body>
+
+    <script>
+    var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+
+        function duration() {
+            alert(vid.duration);
+        }
+
+        function loopon() {
+            vid.loop = true; 
+        }
+        
+        function loopoff() {
+            vid.loop = false;
+        }
+
+        function controlson() {
+            vid.controls = true;
+        }
+
+        function controlsoff() {
+            vid.controls = false;
+        }
+
+        function volumesetting(val) {
+            var myvideo = document.getElementById("myVideo");
+            document.getElementById("vol").innerHTML=val;
+            myvideo.volume = val / 100;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</html>
