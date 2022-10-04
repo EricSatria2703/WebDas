@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <h1>HTML FORM</h1>
+
+</head>
+
+
+<body>
+<h2>Testing html form</h2>
+<form name="biodata" method="POST" action="proses.php">
+    <table width="35%" border="0">
+        <tr>
+            <td>Nim</td>
+            <td><input type="number" name="fnim" required></td>
+        </tr>
+
+        <tr>
+            <td>Nama</td>
+            <td><input type="text" name="fnama" required> <br></td>
+        </tr>
+
+        <tr>
+            <td>Tgl Lhr</td>
+            <td><input type="date" name="flhr" required></td>
+        </tr>
+
+        <tr>
+            <td>Prodi</td>
+            <td>
+                <select name="fprodi" required>
+                    <option value="">Pilih</option>
+                    <option value="11">Teknik Informatika - S1</option>
+                    <option value="12">Sistem Informasi - S1</option>
+                    <option value="13">Teknik Informatika - D3</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>bidang minat</td>
+            <td>
+                <input type="checkbox" name="fminat1" value="01"> <label>Web Programming</label> <br>
+                <input type="checkbox" name="fminat2" value="02"> <label>Mobile Programming</label> <br>
+                <input type="checkbox" name="fminat3" value="03"> <label>Data Science</label> <br>
+                <input type="checkbox" name="fminat4" value="04"> <label>Game Development</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>lamp. proposal</td>
+            <td><input type="file" name="fproposal"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" name="fsubmit" name="fsubmit"> <input type="reset" name="freset"></td>
+        </tr>
+    </table>
+</form>
+
+
+
+
+
+</body>
+
+
+</html>

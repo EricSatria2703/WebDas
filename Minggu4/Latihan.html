@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+    #nomor {
+        text-align: center;
+    }
+
+</style>
+
+<head>
+    <h1><b>FORMULIR PPDB JALUR ZONASI 2020</b></h1>    
+</head>
+    
+    
+    <body>
+    <form name="biodata" method="POST" action="proses.php">
+        <table width="60%" border="1">
+            <tr>
+                <td>Nomor</td>
+                <td colspan="8"><b>INFO PENDAFTARAN</b></td>
+            </tr>
+    
+            <tr>
+                <td id="nomor">1</td>
+                <td colspan="2">NISN</td>
+                <td colspan="2"><input type="number" name="fnisn" required> <br></td>
+            </tr>
+    
+            <tr>
+                <td id="nomor">2</td>
+                <td colspan="2">Asal Sekolah</td>
+                <td colspan="2"><input type="text" name="fasal" required></td>
+            </tr>
+    
+            <tr>
+                <td id="nomor">3</td>
+                <td colspan="2">Tahun Lulus</td>
+                <td><input type="file" name="flulus" required></td>
+                <td colspan="4"><i>(lampirkan foto copy ijazah)</i></td>
+            </tr>
+    
+            <tr>
+                <td colspan="8"><b>DATA CALON PESERTA</b></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">6</td>
+                <td colspan="2">Nama Lengkap</td>
+                <td colspan="2"><input type="text" name="fnama" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">7</td>
+                <td colspan="2">NIK</td>
+                <td colspan="2"><input type="text" name="fnik" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">8</td>
+                <td colspan="2">Tempat/Tanggal Lahir</td>
+                <td colspan="0"><input type="text" name="ftempat" required></td>
+                <td><input type="date" name="ftgl" required></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td colspan="4">Foto Copy Akte Kelahiran Yang Telah Dilegalisir (Di Lampirkan)</td>
+            </tr>
+    
+            <tr>
+                <td id="nomor">9</td>
+                <td colspan="2">Jenis Kelamin</td>
+                <td colspan="2"><input type="text" name="fklmn" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">10</td>
+                <td colspan="4">Alamat</td>
+            </tr>
+
+            <tr>
+                <td id="nomor">11</td>
+                <td colspan="2" style="text-align: right;">Desa/kel.</td>
+                <td colspan="2"><input type="text" name="fdes" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">12</td>
+                <td colspan="2" style="text-align: right;">Kecamatan</td>
+                <td colspan="2"><input type="text" name="fkec" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">13</td>
+                <td colspan="2" style="text-align: right;">Kabupaten</td>
+                <td colspan="2"><input type="text" name="fkab" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">14</td>
+                <td colspan="2" style="text-align: right;">Provinsi</td>
+                <td colspan="2"><input type="text" name="fprov" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">15</td>
+                <td colspan="2">Email Aktif</td>
+                <td colspan="2"><input type="email" name="feml" required></td>
+            </tr>
+
+            <tr>
+                <td colspan="6"><b>DATA ORANG TUA</b> <i>(lampirkan KK)</i></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">16</td>
+                <td colspan="2">Nomor Kartu Keluarga</td>
+                <td colspan="2"><input type="number" name="fkk" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">17</td>
+                <td colspan="2">Nama Ayah Kandung</td>
+                <td colspan="2"><input type="text" name="fayh" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">18</td>
+                <td colspan="2">Agama</td>
+                <td colspan="2"><input type="text" name="fayhagm" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">19</td>
+                <td colspan="2">Pekerjaan</td>
+                <td colspan="2"><input type="text" name="fayhkrj" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">20</td>
+                <td colspan="2">Nama Ibu Kandung</td>
+                <td colspan="2"><input type="text" name="fibu" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">21</td>
+                <td colspan="2">Agama</td>
+                <td colspan="2"><input type="text" name="fibuagm" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">22</td>
+                <td colspan="2">Pekerjaan</td>
+                <td colspan="2"><input type="text" name="fibukrj" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">23</td>
+                <td colspan="4">Alamat Orang Tua</td>
+            </tr>
+
+            <tr>
+                <td id="nomor">24</td>
+                <td colspan="2" style="text-align: right;">Desa/kel.</td>
+                <td colspan="2"><input type="text" name="fordes" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">25</td>
+                <td colspan="2" style="text-align: right;">Kecamatan</td>
+                <td colspan="2"><input type="text" name="forkec" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">26</td>
+                <td colspan="2" style="text-align: right;">Kabupaten</td>
+                <td colspan="2"><input type="text" name="forkab" required></td>
+            </tr>
+
+            <tr>
+                <td id="nomor">27</td>
+                <td colspan="2" style="text-align: right;">Provinsi</td>
+                <td colspan="2"><input type="text" name="forprov" required></td>
+            </tr>
+
+        </table>
+
+        <input type="submit" name="fsubmit"> <input type="reset" name="freset">
+    </form>
+
+
+</html>
