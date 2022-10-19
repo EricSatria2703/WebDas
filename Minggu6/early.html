@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Sebastian Vettel Early Career">
+  <meta name="keywords" content="Sebastian Vettel, Sebastian, Vettel, Sebastian Vettel Early Career, Vettel Junior Formula, Junior, Formula, Vettel Rookie, Rookie">
+  <meta name="author" content="Eric Satria Pratama">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    }
+            
+  li {
+    float: left;
+    }
+            
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    }
+            
+  li a:hover {
+    background-color: #111111;
+    }
+
+  header {
+    background-color: green;
+    margin: -20px;
+    }
+
+  article {
+    float: left;
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  video {
+    margin: auto;
+    display: block;
+  }
+
+  #image {
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #C3E783;
+  }
+
+  input {
+    accent-color: green;
+  }
+</style>
+
+    <title>SV biography - Early Career</title>
+</head>
+
+<body>
+    <header><h1 style="color: white; text-align: center"> Sebastian Vettel</h1></header>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="early.html">Early Career</a></li>
+        <li><a href="redbull.html">Red Bull Racing</a></li>
+        <li><a href="ferrari.html">Scuderia Ferrari</a></li>
+        <li><a href="aston.html">Aston Martin F1</a></li>
+        <li><a href="stats.html">Statistics</a></li>
+        <li><a href="images.html">Images</a></li>
+        <!-- <li><a href="videos.html">Videos</a></li> -->
+    </ul>
+  
+    <article style="background-color: antiquewhite">
+        <video width="854" height="420" id="myVideo">
+            <source src="vid/early.mp4" type="video/mp4">
+                file not supported
+        </video> <br>
+        <button type="button" onclick="playVid()"> Play </button>
+        <button type="button" onclick="pauseVid()"> Pause </button>
+        <button type="button" onclick="duration()"> Duration </button>
+        <button type="button" onclick="loopon()"> Loop On </button>
+        <button type="button" onclick="loopoff()"> Loop Off</button>
+        <button type="button" onclick="controlson()"> Control On </button>
+        <button type="button" onclick="controlsoff()"> Control Off</button>
+        <input id="vol" type="range" min="0" max="100" step="1" oninput="volumesetting(this.value)" onchange="volumesetting(this.value)"> Volume
+    
+        <h2>Early Career</h2>
+        <h3>Junior category days</h3>
+        <p>
+            Vettel began karting at the age of three, and began racing in karts series in 1995 at the age of eight. He was accepted into the Red Bull Junior Team in 1998, 
+            and won various titles, such as the Junior Monaco Kart Cup in 2001. Vettel was promoted to open-wheel cars in 2003, and was given a chance by Derrick Walker to test a Reynard Motorsport Champ Car in a two-day private test at the Homestead road course.
+            A year later, he won the 2004 Formula BMW ADAC championship with 18 victories from 20 races.
+        </p>
+    
+        <p>
+            Vettel drove for ASL Mücke Motorsport in the 2005 Formula 3 Euro Series. He was placed fifth in the final standings with 63 points and won the Rookie Cup. He tested for the Williams Formula One team later that year as a reward for his Formula BMW success. 
+            Vettel then went on to test for the BMW Sauber Formula One team.
+        </p>
+
+        <p>
+            Vettel was promoted to test driver for BMW Sauber in 2006, and participated in the 2006 Formula 3 Euro Series, finishing as runner-up. He also competed in the 2006 Formula Renault 3.5 Series, 
+            where he finished first and second at Misano in his first two races. In the next round at Spa-Francorchamps, his finger was almost sliced off by flying debris following an accident, and he was expected to be out for several weeks.
+            Nevertheless, he managed to compete in the 2006 Masters of Formula 3 at Zandvoort the following weekend, where he finished in sixth place.
+        </p>
+    
+        <p>
+            Vettel competed in the 2007 Formula Renault 3.5 Series, and took his first win at the Nürburgring. He led the championship when he was called up permanently by the BMW Sauber Formula One team.
+        </p> 
+        
+        <h2>BMW Sauber (2006–2007)</h2>
+        <h3>Test driver and debut</h3>
+        <img src="img/Sebastian_Vettel_2007_USA_2.jpg" alt="Vettel in his first f1 outing with BMW Sauber" id="image">
+        <p>
+            Vettel became BMW Sauber's third driver at the 2006 Turkish Grand Prix, when former incumbent Robert Kubica replaced Jacques Villeneuve as second driver for the 2006 Hungarian Grand Prix. On his testing debut, Vettel set the fastest time in the second Friday free practice.
+            Vettel became the then-youngest Formula One driver to participate in a Grand Prix weekend at 19 years and 53 days. He also set a record for collecting his first fine in nine seconds into his career, as Vettel exceeded the pitlane speed limit on the way to the track. In his second testing session at the 2006 Italian Grand Prix, he set the fastest time in both Friday practice sessions.
+        </p>
+        
+        <p>
+            Vettel was confirmed as BMW's test driver for 2007. Following Kubica's crash at the 2007 Canadian Grand Prix, Vettel was named his replacement at the 2007 United States Grand Prix. He started in seventh position and finished in eighth to become the then-youngest driver to score a point in Formula One.
+        </p> <br>
+    
+    </article>
+
+    <footer>
+      Sebastian Vettel Biography Website <i>&copy;</i>
+    </footer>
+
+
+  
+
+
+  <script>
+      var vid = document.getElementById("myVideo");
+
+          function playVid() {
+              vid.play();
+          }
+
+          function pauseVid() {
+              vid.pause();
+          }
+
+          function duration() {
+              alert(vid.duration);
+          }
+
+          function loopon() {
+              vid.loop = true; 
+          }
+        
+          function loopoff() {
+              vid.loop = false;
+          }
+
+          function controlson() {
+              vid.controls = true;
+          }
+
+          function controlsoff() {
+              vid.controls = false;
+          }
+
+          function volumesetting(val) {
+              var myvideo = document.getElementById("myVideo");
+              document.getElementById("vol").innerHTML=val;
+              myvideo.volume = val / 100;
+          }
+  </script>
+
+</body>
+
+</html>
