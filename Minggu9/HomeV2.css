@@ -45,6 +45,7 @@ summary {
 aside {
     background-color: beige;
     border: black solid 1px;
+    overflow: auto;
 }
 
 footer {
