@@ -18,24 +18,6 @@
     <script>
         var mhs = ['Saya', 'Situ', 'Ente']
 
-        var tambah = function() {
-            baru = document.getElementById('inputan').value;
-            mhs.push(baru);
-            keluar();
-            hitungan();
-        }
-        
-        var hitungan = function() {
-        var jumlah = mhs.length;
-        document.getElementById('jumlah').innerHTML = 'Jumlah data: ' + jumlah++;
-        }
-
-        var hapus = function(id) {
-            mhs.splice(id, 1);
-            keluar();
-            document.getElementById('jumlah').innerHTML = 'Jumlah data: ' + mhs.length;
-        }
-
         var keluar = function() {
         var list = document.getElementById('data');
         list.innerHTML = '';
@@ -46,8 +28,27 @@
             '<td>' + mhs[i] + btnhps + '</td>' + '</tr>';
             document.getElementById('jumlah').innerHTML = 'Jumlah data: ' + mhs.length;
         }
-        keluar();
         }
+
+        var tambah = function() {
+            baru = document.getElementById('inputan').value;
+            mhs.push(baru);
+            keluar();
+            hitungan();
+        }
+
+        var hapus = function(id) {
+            mhs.splice(id, 1);
+            keluar();
+            hitungan();
+        }
+
+        var hitungan = function() {
+        var jumlah = mhs.length;
+        document.getElementById('jumlah').innerHTML = 'Jumlah data: ' + jumlah++;
+        }
+
+        keluar();
     </script>
 </body>
 </html>
