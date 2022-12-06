@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>List nama</h3>
+    <input type="text" placeholder="input nama" id="inputan">
+    <input type="submit" value="+" onclick="tambah()">
+    <table border="1" id="data">
+        
+    </table>
+    <p id="jumlah"></p>
+    
+    <script>
+        var mhs = ['Saya', 'Situ', 'Ente']
+
+        var keluar = function() {
+        var list = document.getElementById('data');
+        list.innerHTML = '';
+
+        for(let i=0;i<mhs.length;i++) {
+            var btnhps = "<a href='#' onclick='hapus("+i+")'>Hapus</a>";
+            list.innerHTML += '<tr>' +
+            '<td>' + mhs[i] + btnhps + '</td>' + '</tr>';
+            document.getElementById('jumlah').innerHTML = 'Jumlah data: ' + mhs.length;
+            console.log();
+        }
+        }
+
+        var tambah = function() {
+            baru = document.getElementById('inputan').value;
+            mhs.push(baru);
+            keluar();
+            hitungan();
+            console.log();
+        }
+
+        var hapus = function(id) {
+            mhs.splice(id, 1);
+            keluar();
+            hitungan();
+            console.log();
+        }
+
+        var hitungan = function() {
+        var jumlah = mhs.length;
+        document.getElementById('jumlah').innerHTML = 'Jumlah data: ' + jumlah++;
+        }
+
+        keluar();
+    </script>
+</body>
+</html>
